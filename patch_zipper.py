@@ -7,12 +7,21 @@ def zip_patch_files(root_dir: str) -> None:
     For any subdirectory containing .bps or .ups files, create a zip named after
     the subdirectory and place it in the parent directory.
     Files in the root directory itself are ignored.
+    Any zip larger than 100 MB is deleted, and an error message is shown.
+    Skips hidden directories (any part of the path starting with ".")
     """
     root_path = Path(root_dir)
 
     for subdir_path in root_path.rglob('*'):
         if subdir_path.is_dir():
-            patch_files = [f for f in subdir_path.iterdir() if f.is_file() and f.suffix.lower() in (".bps", ".ups")]
+
+            if any(part.startswith('.') for part in subdir_path.parts):
+                continue
+
+            patch_files = [
+                f for f in subdir_path.iterdir()
+                if f.is_file() and not f.name.startswith('.') and f.suffix.lower() in (".bps", ".ups")
+            ]
             
             if not patch_files:
                 continue
@@ -24,7 +33,12 @@ def zip_patch_files(root_dir: str) -> None:
                 for file_path in patch_files:
                     zipf.write(file_path, arcname=file_path.name)
 
-            print(f"Created zip: {zip_path} with {len(patch_files)} file(s).")
+            zip_size = zip_path.stat().st_size
+            if zip_size > 100 * 1024 * 1024:  # 100 MB
+                print(f"ERROR: {zip_path} exceeds 100 MB ({zip_size / (1024*1024):.2f} MB). Removing it.")
+                zip_path.unlink(missing_ok=True)
+            else:
+                print(f"Created zip: {zip_path} with {len(patch_files)} file(s), size: {zip_size / (1024*1024):.2f} MB.")
 
 
 if __name__ == "__main__":
