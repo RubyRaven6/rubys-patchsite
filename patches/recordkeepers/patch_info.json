@@ -1,0 +1,11 @@
+{
+  "file": "../patches/recordkeepers/recordkeepers.zip",
+  "patches": [
+    {
+      "file": "recordkeepers.bps",
+      "name": "Pokémon Recordkeepers (v1.0)",
+      "description": "",
+      "outputName": "recordkeepers_v1"
+    }
+  ]
+}

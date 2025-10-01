@@ -16,15 +16,36 @@
 	<script type="text/javascript">
 		window.addEventListener('load', function (evt) {
 			try {
-				RomPatcherWeb.initialize({
-					language: 'en', //default: en
-					requireValidation: false
-				}, {
-					file: '../patches/archiesquest/ArchiesQuest_1.1.bps', //zip containing patches
-					name: 'Archies Quest v1.1',
-					description: 'A mythical adventure where you slay demon lords.',
-					outputName: 'ArchiesQuest_v1.1', //patched ROM name
-				});
+				const basePath = "../patches/archiesquest/"
+				fetch(basePath + "patch_info.json")
+				.then(res => res.json())
+				.then(patchInfo => {
+					RomPatcherWeb.initialize(
+						{
+							language: 'en',
+							requireValidation: true,
+							allowDropFiles: true
+						},
+						patchInfo
+					);
+					
+					const downloadBtn = document.getElementById('rom-patcher-button-download');
+					const patchSelect = document.getElementById('rom-patcher-select-patch');
+
+					downloadBtn.onclick = () => {
+					const selectedIndex = patchSelect.selectedIndex;
+					if (selectedIndex < 0) return;
+
+					const patch = patchInfo.patches[selectedIndex];
+					const link = document.createElement('a');
+					link.href = basePath + `raw/${patch.file}`;
+					link.download = patch.file.split('/').pop();
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+					};
+				})
+				.catch(err => console.error(err));
 			} catch (err) {
 				var message = err.message;
 				if (/incompatible browser/i.test(message) || /variable RomPatcherWeb/i.test(message))
@@ -99,6 +120,7 @@
 			<div id="rom-patcher-row-error-message" class="margin-bottom"><span id="rom-patcher-error-message"></span>
 			</div>
 			<button id="rom-patcher-button-apply" data-localize="yes" disabled>Apply patch</button>
+			<button id="rom-patcher-button-download" data-localize="yes">Download patch</button>
 		</div>
 		<br />
 		<div id="external-hack-link">
