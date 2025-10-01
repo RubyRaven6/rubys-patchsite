@@ -16,8 +16,7 @@
 	<script type="text/javascript">
 		window.addEventListener('load', function (evt) {
 			try {
-				const basePath = "../patches/archiesquest/"
-				fetch(basePath + "patch_info.json")
+				fetch("./patch_info.json")
 				.then(res => res.json())
 				.then(patchInfo => {
 					RomPatcherWeb.initialize(
@@ -38,7 +37,7 @@
 
 					const patch = patchInfo.patches[selectedIndex];
 					const link = document.createElement('a');
-					link.href = basePath + `raw/${patch.file}`;
+					link.href = `./patches/${patch.file}`;
 					link.download = patch.file.split('/').pop();
 					document.body.appendChild(link);
 					link.click();

@@ -2,7 +2,7 @@
 <html translate="no">
 
 <head>
-	<title>Pokémon Recordkeepers</title> 
+	<title>Pokémon SpinSpinSpin</title> 
 	<meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
@@ -16,8 +16,7 @@
 	<script type="text/javascript">
 		window.addEventListener('load', function (evt) {
 			try {
-				const basePath = "../patches/recordkeepers/"
-				fetch(basePath + "patch_info.json")
+				fetch("./patch_info.json")
 				.then(res => res.json())
 				.then(patchInfo => {
 					RomPatcherWeb.initialize(
@@ -38,7 +37,7 @@
 
 					const patch = patchInfo.patches[selectedIndex];
 					const link = document.createElement('a');
-					link.href = basePath + `raw/${patch.file}`;
+					link.href = `./patches/${patch.file}`;
 					link.download = patch.file.split('/').pop();
 					document.body.appendChild(link);
 					link.click();
@@ -60,8 +59,7 @@
 
 <body style="font: 15px 'Open Sans', sans-serif; background-color: #31343a; color: #e4e4e6;">
 	<header style="text-align: center">
-		<img src="../assets/images/recordkeepers/recoredkeepers.png" alt="Pokémon Transform Logo" width="35%">
-		<h1>Pokémon Recordkeepers</h1>
+		<h1>Pokémon SpinSpinSpin</h1>
 	</header>
 
 
@@ -126,13 +124,7 @@
 		<div id="external-hack-link">
 			<!--replace the links with the corresponding links, delete anything you dont need-->
 			<div class="smaller-external-button">
-				<a href="https://discord.com/invite/C7jdUwPTky" target="_blank">
-					<img src="../assets/images/externals/Discord-Symbol-Blurple.png" loading="lazy" />
-				</a>
-			</div>
-			
-			<div class="smaller-external-button">
-				<a href="https://github.com/hedara90/tarc2/tree/TARC2-Release" target="_blank">
+				<a href="https://github.com/doodles-hearth/pokemon-hearth/tree/hacking-comp" target="_blank">
 					<img src="../assets/images/externals/github-mark.png" loading="lazy" />
 				</a>
 			</div>

@@ -1,5 +1,5 @@
 {
-  "file": "../patches/recordkeepers/recordkeepers.zip",
+  "file": "./patches.zip",
   "patches": [
     {
       "file": "recordkeepers.bps",

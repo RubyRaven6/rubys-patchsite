@@ -1,5 +1,5 @@
 {
-  "file": "../patches/tarottrials/tarottrials.zip",
+  "file": "./patches.zip",
   "patches": [
     {
       "file": "AioTarotTrials3.bps",

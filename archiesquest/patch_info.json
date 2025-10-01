@@ -1,5 +1,5 @@
 {
-  "file": "../patches/archiesquest/archiesquest.zip",
+  "file": "./patches.zip",
   "patches": [
     {
       "file": "ArchiesQuest_1.1.bps",

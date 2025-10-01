@@ -1,5 +1,5 @@
 {
-  "file": "../patches/poketransform/poketransform.zip",
+  "file": "./patches.zip",
   "patches": [
     {
       "file": "poketransform_v1.1.bps",

@@ -1,5 +1,5 @@
 {
-  "file": "../patches/spinspinspin/spinspinspin.zip",
+  "file": "./patches.zip",
   "patches": [
     {
       "file": "spinspinspin-v1.9.bps",
