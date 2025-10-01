@@ -1,51 +1,100 @@
 <!DOCTYPE html>
 <html translate="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Aqua RomPatchers</title>
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
-</head>
-<body>
-    <div id ="container">
-        <div id = "header"></div>
-        <main>
-            <p>Welcome to the Team Aqua RomPatchers website! This acts as a page that directs to different patching websites for members of Team Aqua. Simply click on one, and you'll be directed to their patching page with instructions of what to do.</p>
-            
-            <div id="portal_id">
-            <h2 style="text-align: center;">Individual Romhacks</h2>
-            <h2 style="text-align: center;">Team Aqua Romhacking Competition 2025</h2>
-                <button class="portal_class">
-                <a href="./webpages/archies_quest.html">
-                    <img src="./assets/images/archies_quest/archies_quest.png" alt="Archie's Quest Logo" width="100%">
-                    <p>Archies Quest by Doodle and Ruby</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                <a href="./webpages/tarot_trials.html">
-                    <img src="./assets/images/tarot_trials/tarot-trials-logo.png" alt="Tarot Trials Logo" width="100%">
-                    <p>Tarot Trials by AioSilver and LuckyCapybara</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./webpages/poketransform.html">
-                    <img src="./assets/images/poketransform/poke_transform.png" alt="Pokémon Transform Logo" width="100%">
-                    <p>Pokémon Transform by Phantonomy and Zatsu</p>
-                </a>
-                </button>
-            </div>
-            <!--
-            To add your own hack, copy the template below and add it underneath the proper headers
 
-            <button class="portal_class">
-            <a href="page.html">
-                <img src="./assets/images/archies_quest/archies_quest.png" alt="Archie's Quest Logo" width="100%">
-                <p>Archies Quest by Doodle and Ruby</p>
-            </a>
-            </button>
-            
-            -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="./assets/images/teamaquabanner.png" alt="logo" />
+        </div>
+        <main>
+            <p class="intro">
+                Welcome to the <strong>Team Aqua RomPatchers</strong> website!<br />
+                This page directs to different patching
+                websites for members of Team Aqua's Hideout.<br />
+                Simply click on one, and you'll be directed to their patching page
+                with instructions of what to do.
+            </p>
+
+            <div class="hacks_block">
+                <h2 class="hacks_block_title">Individual Romhacks</h2>
+                <div class="hacks_subblock">
+                    <h3 class="hacks_subblock_title">Team Aqua Romhacking Competition 2025</h3>
+
+                    <div class="hack_buttons">
+                        <a class="hack_button" href="./webpages/archies_quest.html">
+                            <img src="./assets/images/archies_quest/archies_quest.png" alt="Archie's Quest Logo">
+                            <h4>Archie's Quest</h4>
+                            <p>by Doodle and Ruby</p>
+                        </a>
+
+                        <a class="hack_button" href="./webpages/tarot_trials.html">
+                            <img src="./assets/images/tarot_trials/tarot-trials-logo.png" alt="Tarot Trials Logo">
+                            <h4>Tarot Trials</h4>
+                            <p>by AioSilver and LuckyCapybara</p>
+                        </a>
+
+                        <a class="hack_button" href="./webpages/poketransform.html">
+                            <img src="./assets/images/poketransform/poke_transform.png" alt="Pokémon Transform Logo">
+                            <h4>Pokémon Transform</h4>
+                            <p>by Phantonomy and Zatsu</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="hacks_subblock">
+                    <h3 class="hacks_subblock_title">Team Aqua Romhacking Competition 2024</h3>
+
+                    <div class="hack_buttons">
+                        <a class="hack_button" href="./webpages/archies_quest.html">
+                            <img src="./assets/images/archies_quest/archies_quest.png" alt="Archie's Quest Logo">
+                            <h4>Archie's Quest</h4>
+                            <p>by Doodle and Ruby</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="hacks_block">
+                <h2 class="hacks_block_title">Team Romhacks</h2>
+                <div class="hacks_subblock">
+                    <h3 class="hacks_subblock_title">Doodle's Hearth</h3>
+
+                    <div class="hack_buttons">
+                        <a class="hack_button" href="./webpages/archies_quest.html">
+                            <img src="./assets/images/archies_quest/archies_quest.png" alt="Archie's Quest Logo">
+                            <h4>Pokémon Hearth</h4>
+                            <p>Explore the Toku region!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 </body>
+
 </html>
+<!--
+To add your own hack, copy the template below and add it underneath the proper headers
+
+<button class="portal_class">
+<a href="page.html">
+<img src="./assets/images/archies_quest/archies_quest.png" alt="Archie's Quest Logo" width="100%">
+<p>Archies Quest by Doodle and Ruby</p>
+</a>
+</button>
+
+-->
