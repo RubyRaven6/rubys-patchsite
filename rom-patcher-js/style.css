@@ -466,8 +466,24 @@
 	border-radius: 3px;
 }
 
+img {
+	max-width: 30%;
+}
 
+#external-hack-link {
+	text-align: center;
+	width: 100%;
+}
 
+.smaller-external-button{
+	max-width: 10em;
+	display: inline-block;
+}
+
+.external-hack-link {
+	vertical-align: middle;
+	text-align: center;
+}
 
 
 /* responsive */
