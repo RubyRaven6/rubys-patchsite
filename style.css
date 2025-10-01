@@ -72,10 +72,12 @@ a:hover {
 
 .portal_class {
     border-radius: 25px;
+    vertical-align: middle;
     border: 0.3em solid #0f547b;
     padding: 20px;
     width: 200px;
-    height: 130px;
+    min-height: 130px;
+    overflow: hidden;
     text-align:center;
     display:inline-block;
     margin: 10px;
