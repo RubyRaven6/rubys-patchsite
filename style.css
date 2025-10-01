@@ -5,12 +5,10 @@
 :root {
     --header-image: url('./assets/images/teamaquabanner.png');
     --color-primary: #4eacbb;
-    --color-primary-light: #65c6d5;
-    --color-primary-dark: #318693;
-
-    --color-light: #d2faf7;
-    --color-light-darker: #98dae1;
-    --color-light-darker-2: #6bd1c5;
+    --color-primary-dark-1: #318693;
+    --color-primary-light-1: #65c6d5;
+    --color-primary-light-2: #98dae1;
+    --color-primary-light-3: #d0f2ef;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -29,7 +27,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-primary-dark);
+    color: var(--color-primary-dark-1);
 }
 
 body {
@@ -91,7 +89,7 @@ main {
 }
 
 .hacks_block > .hacks_block_title {
-    color: var(--color-primary-light);
+    color: var(--color-primary-dark-1);
     font-size: 26px;
     font-family: 'Bang-Tamvan', sans-serif;
 }
@@ -105,7 +103,7 @@ main {
     width: 100%;
     padding: 20px;
     border-radius: 20px;
-    background-color: var(--color-light);
+    background-color: var(--color-primary-light-3);
 }
 
 .hacks_subblock > .hacks_subblock_title {
@@ -130,14 +128,14 @@ main {
     justify-content: space-between;
     align-items: center;
     row-gap: 5px;
-    border: 3px solid var(--color-light-darker);
+    border: 3px solid var(--color-primary-light-2);
     border-radius: 20px;
     padding: 20px;
     background-color: white;
 }
 
 .hacks_subblock > .hack_buttons > .hack_button:hover {
-    border-color: var(--color-light-darker-2);
+    border-color: var(--color-primary-light-1);
 }
 
 .hacks_subblock > .hack_buttons > .hack_button > p {
@@ -146,7 +144,7 @@ main {
 }
 
 .hacks_subblock > .hack_buttons > .hack_button > img {
-    width: 70%;
+    width: 300px;
 }
 
 @font-face {
