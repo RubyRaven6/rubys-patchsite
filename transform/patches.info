@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "poketransform_v1.1.bps",
+      "name": "Poketransform (v1.0)",
+      "description": "",
+      "outputName": "poketransform_v1.1"
+    }
+  ]
+}

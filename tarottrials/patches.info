@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "AioTarotTrials3.bps",
+      "name": "Tarot Trials (v3.0)",
+      "description": "",
+      "outputName": "TarotTrials"
+    }
+  ]
+}
