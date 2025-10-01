@@ -2,10 +2,76 @@
   "file": "./patches.zip",
   "patches": [
     {
-      "file": "patchfile.bps",
-      "name": "Game (English v1.0)",
-      "description": "English fan translation for Game",
-      "outputName": "Game (English v1.0)"
-    }
+      "file": "SpiritsOfTheStorm_v1.0(Trashman_1986).bps",
+      "name": "Spirits of the Storm (English v1.0)",
+      "description": "Patch for Trashman 1986 dump",
+      "outputName": "spirits_of_the_storm_v1.0"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.0(Trashman_Not1986).bps",
+      "name": "Spirits of the Storm (English v1.0)",
+      "description": "Patch for dumps that are not 1986",
+      "outputName": "spirits_of_the_storm_v1.0"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.0(USA_Europe).bps",
+      "name": "Spirits of the Storm (English v1.0)",
+      "description": "Patch for USA/Europe dump",
+      "outputName": "spirits_of_the_storm_v1.0"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.0(Trashman_1986).xdelta",
+      "name": "Spirits of the Storm (English v1.0)",
+      "description": "Patch for Trashman 1986 dump",
+      "outputName": "spirits_of_the_storm_v1.0"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.0(Trashman_Not1986).xdelta",
+      "name": "Spirits of the Storm (English v1.0)",
+      "description": "Patch for dumps that are not 1986",
+      "outputName": "spirits_of_the_storm_v1.0"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.0(USA_Europe).xdelta",
+      "name": "Spirits of the Storm (English v1.0)",
+      "description": "Patch for USA/Europe dump",
+      "outputName": "spirits_of_the_storm_v1.0"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.1(Trashman_1986).bps",
+      "name": "Spirits of the Storm (English v1.1)",
+      "description": "Patch for Trashman 1986 dump",
+      "outputName": "spirits_of_the_storm_v1.1"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.1(Trashman_Not1986).bps",
+      "name": "Spirits of the Storm (English v1.1)",
+      "description": "Patch for dumps that are not 1986",
+      "outputName": "spirits_of_the_storm_v1.1"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.1(USA_Europe).bps",
+      "name": "Spirits of the Storm (English v1.1)",
+      "description": "Patch for USA/Europe dump",
+      "outputName": "spirits_of_the_storm_v1.1"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.1(Trashman_1986).xdelta",
+      "name": "Spirits of the Storm (English v1.1)",
+      "description": "Patch for Trashman 1986 dump",
+      "outputName": "spirits_of_the_storm_v1.1"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.1(Trashman_Not1986).xdelta",
+      "name": "Spirits of the Storm (English v1.1)",
+      "description": "Patch for dumps that are not 1986",
+      "outputName": "spirits_of_the_storm_v1.1"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.1(USA_Europe).xdelta",
+      "name": "Spirits of the Storm (English v1.1)",
+      "description": "Patch for USA/Europe dump",
+      "outputName": "spirits_of_the_storm_v1.1"
+    },
   ]
 }
