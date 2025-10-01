@@ -1,0 +1,111 @@
+/* @FONT-FACES */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
+
+:root {
+    --header-image: url('./assets/images/teamaquabanner.png');
+}
+
+a { 
+  color: #000000; 
+  font-weight: bold;
+  text-decoration:none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rounds-Neue', sans-serif;
+  margin: 0;              
+}
+
+h5 {
+    font-family: 'Bang-Tamvan', sans-serif;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bang-Tamvan', sans-serif;
+    margin: 0;
+    background-color: #3f547b;
+    color: black;
+}
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    max-width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+    and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+#header {
+        width: 100%;
+        /* header color here! */
+        height: 270px;
+        /* this is only for a background image! */
+        /* if you want to put images IN the header, 
+you can add them directly to the <div id="header"></div> element! */
+        background-image: var(--header-image);
+        background-size: 100%;
+}
+
+main {
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+a:hover {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#portal_id{
+    text-align: center;
+}
+
+.portal_class {
+    border-radius: 25px;
+    border: 0.3em solid #0f547b;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    text-align:center;
+    display:inline-block;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: Bang-Tamvan;
+    src: url('./assets/fonts/Bang%20Tamvan.ttf');
+}
+
+@font-face {
+    font-family: Rounds-Neue;
+    src: url('./assets/fonts/Rounds Neue/TT%20Rounds%20Neue%20Regular.ttf');
+}
+
+@font-face {
+    font-family: Rounds-Neue;
+    src: url('./assets/fonts/Rounds Neue/TT%20Rounds%20Neue%20Bold.ttf');
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: Rounds-Neue;
+    src: url('./assets/fonts/Rounds Neue/TT%20Rounds%20Neue%20Medium%20Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Rounds-Neue;
+    src: url('./assets/fonts/Rounds Neue/TT%20Rounds%20Neue%20Bold%20Italic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
