@@ -75,10 +75,11 @@ a:hover {
     border: 0.3em solid #0f547b;
     padding: 20px;
     width: 200px;
-    height: 100px;
+    height: 130px;
     text-align:center;
     display:inline-block;
     margin: 10px;
+    background-color: #FFFFFF;
 }
 
 @font-face {
