@@ -12,7 +12,7 @@ def zip_patch_files(root_dir: str) -> None:
 
     for subdir_path in root_path.rglob('*'):
         if subdir_path.is_dir():
-            patch_files = [f for f in subdir_path.iterdir() if f.is_file() and f.suffix.lower() in (".bps", ".ups")]
+            patch_files = [f for f in subdir_path.iterdir() if f.is_file() and f.suffix.lower() in (".bps", ".ups", ".xdelta")]
             
             if not patch_files:
                 continue

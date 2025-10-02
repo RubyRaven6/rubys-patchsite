@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "CollapseFrostborneTARC2_VER2.bps",
+      "name": "Pokémon Collapse: Frostborne (English v2.0)",
+      "description": "",
+      "outputName": "pokemon_frostbornecollapse_v2.0"
+    }
+  ]
+}
