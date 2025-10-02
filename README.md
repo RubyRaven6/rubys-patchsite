@@ -14,9 +14,8 @@ If you wish to add your own hack, see [this tutorial](./tutorials/how_to_add_hac
 - Pokémon Recordkeepers by Turtleye and hedara
 - Inkwell by Unfolding and Egg
 - Pokémon TWO by Shahar
-- Pokémon: The Unown King by Nicolavs Aqvae
-- Pokémon: Spirits of the Storm
-- Pokémon: Anomaly Forest
+- Pokémon Spirits of the Storm by Kumatora and PrinceFluff
+- Pokémon Fire of Sky by Teon
 
 ### Team Aqua Romhacking Competition 2024
 - Pokémon SpinSpinSpin by purrfectdoodle
