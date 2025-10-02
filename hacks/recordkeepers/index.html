@@ -56,6 +56,9 @@
 			}
 		});
 	</script>
+
+	<!-- Marked Initialisation --->
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body style="font: 15px 'Open Sans', sans-serif; background-color: #31343a; color: #e4e4e6;">
@@ -64,6 +67,30 @@
 		<h1>Pokémon Recordkeepers</h1>
 	</header>
 
+	<div id="rom-patcher-container"
+		style="justify-content:center;align-items:center;text-align:center;">
+	</div>
+	<script>
+		fetch('./info.md')
+		.then(response => {
+		if (!response.ok) {
+			return "";
+		}
+		return response.text();
+		})
+		.then(text => {
+		const container = document.getElementById('rom-patcher-container');
+		if (text.trim()) {
+			container.innerHTML = marked.parse(text);
+		} else {
+			container.innerHTML = "";
+		}
+		})
+		.catch(err => {
+		document.getElementById('rom-patcher-container').innerHTML = "";
+		console.error(err);
+		});
+	</script>
 
 	<!-- Rom Patcher JS container -->
 	<!--
@@ -124,7 +151,6 @@
 		</div>
 		<br />
 		<div id="external-hack-link">
-<<<<<<< Updated upstream:recordkeepers/index.html
 			<!--replace the links with the corresponding links, delete anything you dont need-->
 			<div class="smaller-external-button">
 				<a href="https://discord.com/invite/C7jdUwPTky" target="_blank">
@@ -132,9 +158,6 @@
 				</a>
 			</div>
 			
-=======
-			<!--replace the links with the corresponding links, delete anything you dont need-->			
->>>>>>> Stashed changes:hacks/pokemon_two/index.html
 			<div class="smaller-external-button">
 				<a href="https://github.com/hedara90/tarc2/tree/TARC2-Release" target="_blank">
 					<img src="../../assets/images/externals/github-mark.png" loading="lazy" />
