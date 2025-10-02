@@ -6,6 +6,7 @@ If you wish to add your own hack, see [this tutorial](./tutorials/how_to_add_hac
 ## List of Featured Hacks
 
 ### Standalone Projects
+- The Pit by Archie & Wiz
 
 ### Team Aqua Romhacking Competition 2025
 - Archie's Quest by RubyRaven6 and purrfectdoodle
@@ -16,6 +17,10 @@ If you wish to add your own hack, see [this tutorial](./tutorials/how_to_add_hac
 - Pokémon TWO by Shahar
 - Pokémon Spirits of the Storm by Kumatora and PrinceFluff
 - Pokémon Fire of Sky by Teon
+- Pokémon Anomaly Forest by descojeme
+- Pokémon Collapse: Frostborne by duckboy2001
+- Pokémon Legends SB by jicem
+- Pokémon The Unown King by Nicolavs Aqvae
 
 ### Team Aqua Romhacking Competition 2024
 - Pokémon SpinSpinSpin by purrfectdoodle
