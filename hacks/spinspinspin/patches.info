@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "spinspinspin-v1.9.bps",
+      "name": "SpinSpinSpin (v1.9)",
+      "description": "",
+      "outputName": "pokemon_spinspinspin_1.9"
+    }
+  ]
+}

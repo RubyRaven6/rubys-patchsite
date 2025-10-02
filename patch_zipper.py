@@ -20,7 +20,7 @@ def zip_patch_files(root_dir: str) -> None:
 
             patch_files = [
                 f for f in subdir_path.iterdir()
-                if f.is_file() and not f.name.startswith('.') and f.suffix.lower() in (".bps", ".ups")
+                if f.is_file() and not f.name.startswith('.') and f.suffix.lower() in (".bps", ".ups", ".xdelta")
             ]
             
             if not patch_files:
