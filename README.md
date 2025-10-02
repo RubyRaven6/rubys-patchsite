@@ -53,7 +53,6 @@ Show all options:
 * [Radical Red](https://patch.radicalred.net/)
 * [Rocket Edition](https://rocket-edition.com/download/)
 * [SnapCameraPreservation](https://snapchatreverse.jaku.tv/snap/)
-* [Pokemon Clover](https://poclo.net/download)
 * [ZeldaHacking Wiki for The Legend of Zelda: Oracle of Ages and Seasons](https://wiki.zeldahacking.net/oracle/)
 * [Pokemon Elite Redux](https://elite-redux.com/)
 
