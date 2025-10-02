@@ -1,0 +1,17 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "AioTarotTrials3.bps",
+      "name": "Tarot Trials (v3.0)",
+      "description": "",
+      "outputName": "TarotTrials"
+    },
+    {
+      "file": "AioTarotTrials4.bps",
+      "name": "Tarot Trials (v4.0)",
+      "description": "",
+      "outputName": "TarotTrials"
+    }
+  ]
+}
