@@ -89,9 +89,21 @@ main {
 }
 
 .hacks_block > .hacks_block_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.hacks_block > .hacks_block_title > h2 {
     color: var(--color-primary-dark-1);
     font-size: 26px;
     font-family: 'Bang-Tamvan', sans-serif;
+}
+
+.hacks_block > .hacks_block_title > img {
+    width: 40px;
 }
 
 .hacks_subblock {
