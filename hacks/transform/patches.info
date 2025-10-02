@@ -3,9 +3,15 @@
   "patches": [
     {
       "file": "poketransform_v1.1.bps",
-      "name": "Poketransform (v1.0)",
+      "name": "Poketransform (v1.1)",
       "description": "",
       "outputName": "poketransform_v1.1"
+    },
+    {
+      "file": "poketransform_v1.2.bps",
+      "name": "Poketransform (v1.2)",
+      "description": "",
+      "outputName": "poketransform_v1.2"
     }
   ]
 }
