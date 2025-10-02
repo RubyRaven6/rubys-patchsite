@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "legends.bps",
+      "name": "Pokémon Legends SB",
+      "description": "",
+      "outputName": "pokemon_legends_sb"
+    }
+  ]
+}

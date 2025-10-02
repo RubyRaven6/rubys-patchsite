@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "pokemon-the-unown-king.bps",
+      "name": "Pokémon The Unown King (English v1.0)",
+      "description": "",
+      "outputName": "pokemon_the_unown_king_v1.0"
+    }
+  ]
+}
