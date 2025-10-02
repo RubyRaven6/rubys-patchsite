@@ -2,12 +2,6 @@
   "file": "./patches.zip",
   "patches": [
     {
-      "file": "Pokemon-Fire-of-Sky-v1.0.bps",
-      "name": "Fire of Sky (v1.0)",
-      "description": "",
-      "outputName": "fire_of_sky_v1.0"
-    },
-    {
       "file": "Pokemon-Fire-of-Sky-v1.0.1.bps",
       "name": "Fire of Sky (v1.0.1)",
       "description": "",
