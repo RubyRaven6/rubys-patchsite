@@ -1,120 +1,165 @@
 <!DOCTYPE html>
 <html translate="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <title>Team Aqua RomPatchers</title>
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="./assets/team-aqua-logo.png" type="image/x-icon"/>
+    <link rel="icon" href="./assets/team-aqua-logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div id ="container">
-        <div id = "header"></div>
+    <div id="container">
+        <div id="header">
+            <img src="./assets/images/teamaquabanner.png" alt="logo" />
+        </div>
         <main>
-            <p>Welcome to the Team Aqua RomPatchers website! This acts as a page that directs to different patching websites for members of Team Aqua. Simply click on one, and you'll be directed to their patching page with instructions of what to do.</p>
-            
-            <div id="portal_id">
-            <h2 style="text-align: center;">Standalone Romhacks</h2>
-                <button class="portal_class">
-                <a href="https://www.pokecommunity.com/threads/the-pit-v2-roguelite-style-hack.528423/"
-                    target="_blank">
-                    <img src="./hacks/the_pit/logo.png" alt="Game Logo" width="100%">
-                    <p>The Pit by Archie and Wiz</p>
-                </a>
-                </button>
-            <h2 style="text-align: center;">Team Aqua Romhacking Competition 2025</h2>
-                <button class="portal_class">
-                <a href="./hacks/archiesquest">
-                    <img src="./hacks/archiesquest/logo.png" alt="Archie's Quest Logo" width="100%">
-                    <p>Archies Quest by Doodle and Ruby</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                <a href="./hacks/tarottrials">
-                    <img src="./hacks/tarottrials/logo.png" alt="Tarot Trials Logo" width="100%">
-                    <p>Tarot Trials by AioSilver and LuckyCapybara</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/transform">
-                    <img src="./hacks/transform/logo.png" alt="Pokémon Transform Logo" width="100%">
-                    <p>Pokémon Transform by Phantonomy and Zatsu</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/recordkeepers">
-                    <img src="./hacks/recordkeepers/logo.png" alt="Pokémon Recordkeepers Logo" width="100%">
-                    <p>Pokémon Recordkeepers by Turtleye and hedara</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/inkwell">
-                    <img src="./hacks/inkwell/logo.png" alt="Inkwell Logo" width="100%">
-                    <p>Inkwell (a romhaiku) by Unfolding and Egg</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/anomaly_forest">
-                    <img src="./hacks/anomaly_forest/logo.png" alt="Anomaly Forest" width="100%">
-                    <p>Anomaly Forest by descojeme</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/spirits_of_the_storm/">
-                    <img src="./hacks/spirits_of_the_storm/logo.png" alt="Spirits of the Storm Logo" width="100%">
-                    <p>Spirits of the Storm by Kumatora and Prince Fluff</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/pokemon_two/">
-                    <img src="./hacks/pokemon_two/logo.png" alt="POKéMON TWO Logo" width="100%">
-                    <p>POKéMON TWO by Shachar</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/fire_of_sky/">
-                    <img src="./hacks/fire_of_sky/logo.png" alt="Inkwell Logo" width="100%">
-                    <p>Pokémon Fire of Sky by Teon</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                    <a href="./hacks/the_unown_king/">
-                    <img src="./hacks/the_unown_king/logo.png" alt="Game Logo" width="100%">
-                    <p>The Unown King by Nicolavs Aqvae</p>
-                    </a>
-                </button>
-                <button class="portal_class">
-                <a href="./hacks/legends_sb/">
-                    <img src="./hacks/legends_sb/logo.png" alt="Game Logo" width="100%">
-                    <p>Pokémon Legends SB by jicem</p>
-                </a>
-                </button>
-                <button class="portal_class">
-                <a href="./hacks/collapse_frostborne/">
-                    <img src="./hacks/collapse_frostborne/logo.png" alt="Game Logo" width="100%">
-                    <p>Pokémon Collapse: Frostborne by duckboy2001</p>
-                </a>
-                </button>
-            <h2 style="text-align: center;">Team Aqua Romhacking Competition 2024</h2>
-                <button class="portal_class">
-                    <a href="./hacks/spinspinspin">
-                    <img src="./hacks/spinspinspin/logo.png" alt="Pokémon SpinSpinSpin Logo" width="100%">
-                    <p>Pokémon SpinSpinSpin by purrfectdoodle</p>
-                </a>
-                </button>
+            <p class="intro">
+                Welcome to the <strong>Team Aqua RomPatchers</strong> website!<br />
+                This page directs to different patching
+                websites for members of Team Aqua's Hideout.<br />
+                Simply click on one, and you'll be directed to their patching page
+                with instructions of what to do.
+            </p>
+
             <!--
             To add your own hack, copy the template below and add it underneath the proper headers
 
-            <button class="portal_class">
-            <a href="page.html">
-                <img src="./hacks/template/logo.png" alt="Game Logo" width="100%">
-                <p>Hack Name by Junichi Masuda</p>
-            </a>
-            </button>
+                        <a class="hack_button" href="./hacks/game">
+                            <img src="./hacks/game/logo.png" alt="Game Name">
+                            <h4>Game Name</h4>
+                            <p>by Author</p>
+                        </a>
+
             -->
+
+            <div class="hacks_block">
+                <div class="hacks_block_title">
+                    <!-- <img src="assets/images/team-aqua-logo.png"> -->
+                    <img src="assets/images/team-aqua-logo-smol.png">
+                    <h2>Standalone hacks</h2>
+                    <img src="assets/images/team-aqua-logo-smol.png">
+                </div>
+
+                <div class="hacks_subblock">
+                    <div class="hack_buttons">
+                        <a class="hack_button" href="https://www.pokecommunity.com/threads/the-pit-v2-roguelite-style-hack.528423/">
+                            <img src="./hacks/the_pit/logo.png" alt="The Pit">
+                            <h4>The Pit</h4>
+                            <p>by Archie and Wiz</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hacks_block">
+                <div class="hacks_block_title">
+                    <!-- <img src="assets/images/team-aqua-logo.png"> -->
+                    <img src="assets/images/team-aqua-logo-smol.png">
+                    <h2>Team Aqua Romhacking Competitions</h2>
+                    <img src="assets/images/team-aqua-logo-smol.png">
+                </div>
+
+                <div class="hacks_subblock">
+                    <h3 class="hacks_subblock_title">2025</h3>
+
+                    <div class="hack_buttons">
+                        <a class="hack_button" href="./hacks/archiesquest">
+                            <img src="./hacks/archiesquest/logo.png" alt="Archie's Quest">
+                            <h4>Archie's Quest</h4>
+                            <p>by Doodle and Ruby</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/tarottrials">
+                            <img src="./hacks/tarottrials/logo.png" alt="Tarot Trials">
+                            <h4>Tarot Trials</h4>
+                            <p>by AioSilver and LuckyCapybara</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/transform">
+                            <img src="./hacks/transform/logo.png" alt="Pokémon Transform">
+                            <h4>Pokémon Transform</h4>
+                            <p>by Phantonomy and Zatsu</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/recordkeepers">
+                            <img src="./hacks/recordkeepers/logo.png" alt="Pokémon Recordkeepers">
+                            <h4>Pokémon Recordkeepers</h4>
+                            <p>by Turtleye and hedara</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/inkwell">
+                            <img src="./hacks/inkwell/logo.png" alt="Inkwell">
+                            <h4>Inkwell</h4>
+                            <p>A romhaiku by Unfolding and Egg</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/anomaly_forest">
+                            <img src="./hacks/anomaly_forest/logo.png" alt="Anomaly Forest">
+                            <h4>Anomaly Forest</h4>
+                            <p>by descojeme</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/spirits_of_the_storm">
+                            <img src="./hacks/spirits_of_the_storm/logo.png" alt="Spirits of the Storm">
+                            <h4>Spirits of the Storm</h4>
+                            <p>by Kumatora and Prince Fluff</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/pokemon_two">
+                            <img src="./hacks/pokemon_two/logo.png" alt="POKéMON TWO">
+                            <h4>POKéMON TWO</h4>
+                            <p>by Shachar</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/fire_of_sky">
+                            <img src="./hacks/fire_of_sky/logo.png" alt="Pokémon Fire of Sky">
+                            <h4>Pokémon Fire of Sky</h4>
+                            <p>by Teon</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/the_unown_king/">
+                            <img src="./hacks/the_unown_king/logo.png" alt="The Unown King">
+                            <h4>The Unown King</h4>
+                            <p>by Nicolavs Aqvae</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/legends_sb/">
+                            <img src="./hacks/legends_sb/logo.png" alt="Pokémon Legends SB">
+                            <h4>Pokémon Legends SB</h4>
+                            <p>by jicem</p>
+                        </a>
+
+                        <a class="hack_button" href="./hacks/collapse_frostborne/">
+                            <img src="./hacks/collapse_frostborne/logo.png" alt="Pokémon Collapse: Frostborne">
+                            <h4>Pokémon Collapse: Frostborne</h4>
+                            <p>by duckboy2001</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="hacks_subblock">
+                    <h3 class="hacks_subblock_title">2024</h3>
+
+                    <div class="hack_buttons">
+                        <a class="hack_button" href="./hacks/spinspinspin">
+                            <img src="./hacks/spinspinspin/logo.png" alt="SpinSpinSpin Logo">
+                            <h4>Pokémon SpinSpinSpin</h4>
+                            <p>by Doodle</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>
