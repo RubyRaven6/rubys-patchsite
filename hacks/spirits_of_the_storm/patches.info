@@ -1,0 +1,17 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "SpiritsOfTheStorm_v1.1(Trashman_1986).bps",
+      "name": "Spirits of the Storm (1986 Trashman) (English v1.1)",
+      "description": "Patch for Trashman 1986 Trashman dump",
+      "outputName": "spirits_of_the_storm_v1.1"
+    },
+    {
+      "file": "SpiritsOfTheStorm_v1.1(Trashman_Not1986).bps",
+      "name": "Spirits of the Storm (Not 1986 Trashman) (English v1.1)",
+      "description": "Patch for dumps that are not 1986 Trashman",
+      "outputName": "spirits_of_the_storm_v1.1"
+    }
+  ]
+}

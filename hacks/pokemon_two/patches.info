@@ -1,0 +1,11 @@
+{
+  "file": "./patches.zip",
+  "patches": [
+    {
+      "file": "Pokemon_TWO v1.0.bps",
+      "name": "POKéMON TWO (v1.0)",
+      "description": "",
+      "outputName": "pokemon_two_v1.0"
+    }
+  ]
+}
