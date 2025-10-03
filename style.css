@@ -55,8 +55,28 @@ of the container */
     max-width: 900px;
 }
 
+#header {
+    position: relative;
+}
+
 #header > img {
     width: 100%;
+}
+
+#header > .motto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-family: 'Bang-Tamvan', sans-serif;
+}
+
+#header > .motto > .x {
+    color: #F85562;
 }
 
 main {
