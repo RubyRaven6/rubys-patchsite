@@ -2,16 +2,10 @@
   "file": "./patches.zip",
   "patches": [
     {
-      "file": "poketransform_v1.1.bps",
-      "name": "Poketransform (v1.1)",
+      "file": "poketransform_v1.3.bps",
+      "name": "Poketransform (v1.3)",
       "description": "Pokémon Emerald (USA, Europe) Base ROM",
-      "outputName": "poketransform_v1.1"
-    },
-    {
-      "file": "poketransform_v1.2.bps",
-      "name": "Poketransform (v1.2)",
-      "description": "Pokémon Emerald (USA, Europe) Base ROM",
-      "outputName": "poketransform_v1.2"
+      "outputName": "poketransform_v1.3"
     }
   ]
 }
