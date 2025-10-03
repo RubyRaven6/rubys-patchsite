@@ -4,13 +4,13 @@
     {
       "file": "poketransform_v1.1.bps",
       "name": "Poketransform (v1.1)",
-      "description": "",
+      "description": "Pokémon Emerald (USA, Europe) Base ROM",
       "outputName": "poketransform_v1.1"
     },
     {
       "file": "poketransform_v1.2.bps",
       "name": "Poketransform (v1.2)",
-      "description": "",
+      "description": "Pokémon Emerald (USA, Europe) Base ROM",
       "outputName": "poketransform_v1.2"
     }
   ]
