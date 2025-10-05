@@ -2,10 +2,10 @@
   "file": "./patches.zip",
   "patches": [
     {
-      "file": "ArchiesQuest_1.2.bps",
-      "name": "Archies Quest v1.2",
+      "file": "ArchiesQuest_1.2.1.bps",
+      "name": "Archies Quest v1.2.1",
       "description": "Pokémon Emerald (USA, Europe) Base ROM",
-      "outputName": "ArchiesQuest_v1.2"
+      "outputName": "ArchiesQuest_v1.2.1"
     }
   ]
 }
