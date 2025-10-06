@@ -2,7 +2,7 @@
 
 Thank you for allowing your ROM hack to be hosted on **Team Aqua Rom Patchers** website!  
 
-To add your patching page, you can **fork the repository, create and make edits in your patcher's own folder, and open a pull request**. Once your PR is reviewed by a maintainer, your patcher may be added to the homepage. **None of the necessary edits require HTML knowledge and are all contained within your patcheing page folder** — no changes to other parts of the site are required.
+To add your patching page, you can **fork the repository, create and make edits in your patcher's own folder, and open a pull request**. Once your PR is reviewed by a maintainer, your patcher may be added to the homepage. **None of the necessary edits require HTML knowledge and are all contained within your patching page folder** — no changes to other parts of the site are required.
 
 ---
 
@@ -31,7 +31,7 @@ Firstly we'll create your very own patching page, allowing information about you
 ### Patches & Info
 1. Create a subfolder called `patches` within your patching page directory.
 2. Place your patch files inside it.
-    | Only `.bps`, `.ups` and `.xdelta` patches are able to be used.
+    > Only `.bps`, `.ups` and `.xdelta` patches are able to be used.
 3. Open the `patches.info` file, which contains details about each patch.
     ```
     "patches": [
@@ -54,7 +54,7 @@ Firstly we'll create your very own patching page, allowing information about you
     > If this zip file is too large, errors may occur with the patcher, although the exact file size that causes this is unknown.
     > If either of these occur, try reducing the number of patches hosted.
     
-    The python script `patch_zipper.py` in the root directory of this repo is provided to help generate a properly formatted `.zip` file from your patch folder. It can by run while parsing an argument containing the directory of your patching page directory, eg. `python3 patch_zipper.py hacks/template`
+    The python script `patch_zipper.py` in the root directory of this repo is provided to help generate a properly formatted `.zip` file from your patch folder. It can by run while parsing an argument containing the directory of your patching page directory, eg. `python3 patch_zipper.py hacks/template`.
 
 ---
 
