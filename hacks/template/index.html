@@ -2,11 +2,9 @@
 <html translate="no">
 
 <head>
-	<title>Rom Patcher JS - Custom patcher template</title> 
+	<title>Rom Patcher JS - Custom patcher template</title>
 	<meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-
-
 
 	<!-- Rom Patcher JS needed CSS/JS files -->
 	<link type="text/css" rel="stylesheet" href="../../rom-patcher-js/style.css" media="all" />
@@ -18,34 +16,34 @@
 		window.addEventListener('load', function (evt) {
 			try {
 				fetch("./patches.info")
-				.then(res => res.json())
-				.then(patchInfo => {
-					RomPatcherWeb.initialize(
-						{
-							language: 'en',
-							requireValidation: true,
-							allowDropFiles: true
-						},
-						patchInfo
-					);
-					
-					const downloadBtn = document.getElementById('rom-patcher-button-download');
-					const patchSelect = document.getElementById('rom-patcher-select-patch');
+					.then(res => res.json())
+					.then(patchInfo => {
+						RomPatcherWeb.initialize(
+							{
+								language: 'en',
+								requireValidation: true,
+								allowDropFiles: true
+							},
+							patchInfo
+						);
 
-					downloadBtn.onclick = () => {
-					const selectedIndex = patchSelect.selectedIndex;
-					if (selectedIndex < 0) return;
+						const downloadBtn = document.getElementById('rom-patcher-button-download');
+						const patchSelect = document.getElementById('rom-patcher-select-patch');
 
-					const patch = patchInfo.patches[selectedIndex];
-					const link = document.createElement('a');
-					link.href = `./patches/${patch.file}`;
-					link.download = patch.file.split('/').pop();
-					document.body.appendChild(link);
-					link.click();
-					document.body.removeChild(link);
-					};
-				})
-				.catch(err => console.error(err));
+						downloadBtn.onclick = () => {
+							const selectedIndex = patchSelect.selectedIndex;
+							if (selectedIndex < 0) return;
+
+							const patch = patchInfo.patches[selectedIndex];
+							const link = document.createElement('a');
+							link.href = `./patches/${patch.file}`;
+							link.download = patch.file.split('/').pop();
+							document.body.appendChild(link);
+							link.click();
+							document.body.removeChild(link);
+						};
+					})
+					.catch(err => console.error(err));
 			} catch (err) {
 				var message = err.message;
 				if (/incompatible browser/i.test(message) || /variable RomPatcherWeb/i.test(message))
@@ -63,9 +61,7 @@
 
 <body style="font: 15px 'Open Sans', sans-serif; background-color: var(--page-bg-color); color: #e4e4e6;">
 	<header style="text-align: center">
-		<!--
 		<img src="./logo.png" alt="Hack Logo Alttext" width="35%">
-		--> 
 		<h1>Rom Patcher JS</h1>
 		<p>
 			This is a template that shows off Rom Patcher JS embeding capabilities. You can use this template to embed
@@ -76,29 +72,28 @@
 		</p>
 	</header>
 
-	<div id="rom-patcher-container"
-		style="justify-content:center;align-items:center;text-align:center;">
+	<div id="rom-patcher-container" style="justify-content:center;align-items:center;text-align:center;">
 	</div>
 	<script>
 		fetch('./info.md')
-		.then(response => {
-		if (!response.ok) {
-			return "";
-		}
-		return response.text();
-		})
-		.then(text => {
-		const container = document.getElementById('rom-patcher-container');
-		if (text.trim()) {
-			container.innerHTML = marked.parse(text);
-		} else {
-			container.innerHTML = "";
-		}
-		})
-		.catch(err => {
-		document.getElementById('rom-patcher-container').innerHTML = "";
-		console.error(err);
-		});
+			.then(response => {
+				if (!response.ok) {
+					return "";
+				}
+				return response.text();
+			})
+			.then(text => {
+				const container = document.getElementById('rom-patcher-container');
+				if (text.trim()) {
+					container.innerHTML = marked.parse(text);
+				} else {
+					container.innerHTML = "";
+				}
+			})
+			.catch(err => {
+				document.getElementById('rom-patcher-container').innerHTML = "";
+				console.error(err);
+			});
 	</script>
 
 	<!-- Rom Patcher JS container -->
@@ -166,12 +161,12 @@
 					<img src="../../assets/images/externals/Discord-Symbol-Blurple.png" loading="lazy" />
 				</a>
 			</div>
-			
+
 			<div class="smaller-external-button">
 				<a href="" target="_blank">
 					<img src="../../assets/images/externals/github-mark.png" loading="lazy" />
 				</a>
-			</div>			
+			</div>
 			<div class="smaller-external-button">
 				<a href="" target="_blank">
 					<img src="../../assets/images/externals/PokéCommunity_Logo_2014.png" loading="lazy" />
@@ -188,11 +183,12 @@
 
 	<div id="rom-patcher-powered" class="text-center">
 		<a href="https://github.com/marcrobledo/RomPatcher.js" target="_blank"><img
-				src="../../rom-patcher-js/assets/powered_by_rom_patcher_js.png" loading="lazy" />Powered by Rom Patcher JS</a>
+				src="../../rom-patcher-js/assets/powered_by_rom_patcher_js.png" loading="lazy" />Powered by Rom Patcher
+			JS</a>
 	</div>
 	<div id="team-aqua-homepage" class="text-center">
-		<a href="../../index.html"><img
-				src="../../assets/images/team-aqua-logo.png" loading="lazy" />Team Aqua RomPatchers Homepage</a>
+		<a href="../../index.html"><img src="../../assets/images/team-aqua-logo.png" loading="lazy" />Team Aqua
+			RomPatchers Homepage</a>
 	</div>
 </body>
 
