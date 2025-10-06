@@ -1,6 +1,6 @@
 # Adding Your Own Hack
 
-Thank you for allowing your ROM hack to be hosted on Team Aqua Rom Patchers website!  
+Thank you for allowing your ROM hack to be hosted on **Team Aqua Rom Patchers** website!  
 
 To add your patching page, you can **fork the repository, create and make edits in your patcher's own folder, and open a pull request**. Once your PR is reviewed by a maintainer, your patcher may be added to the homepage. **None of the necessary edits require HTML knowledge and are all contained within your patcher folder** — no changes to other parts of the site are required.
 
