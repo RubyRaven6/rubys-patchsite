@@ -62,5 +62,6 @@ Firstly we'll create your very own patching page, allowing information about you
 ### Other Images
 Additional images can be added to your patching page, or any other place on the site, but this may require manual edits to HTML. A maintainer may assist if needed.
 
-### Patch Creator (*Coming Soon*)
-A GitHub Action automatically generates a patch file from the base **pokeemerald** ROM. The process usually takes around **15 minutes**.
+### Automatic Patch Creator (*Coming Soon*)
+While a patch can easily be created on the [RomPatcher.js](https://www.marcrobledo.com/RomPatcher.js/) website, legally obtaining a Pokémon Emerald, Pokémon FireRed or Pokémon LeafGreen ROM may not be possible for everyone. To help with this, there is a GitHub Action that automatically generates a patch file using **pokeemerald** or **pokefirered** when you create a release of your ROM hack on GitHub. This bypasses the need to obtain the ROM yourself, with the process usually taking around **15 minutes**.
+
