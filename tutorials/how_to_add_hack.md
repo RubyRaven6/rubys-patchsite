@@ -8,7 +8,7 @@ To add your patching page, you can **fork the repository, create and make edits 
 
 ## ROM Patching Page
 Firstly we'll create your very own patching page, allowing information about your ROM hack to be displayed, external sites to be linked, and of course your patches downloaded or applied to a ROM.
-```
+```diff
 └── template
 +   ├── patches
 +       └── *
