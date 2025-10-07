@@ -22,7 +22,7 @@ Firstly we'll create your very own patching page, allowing information about you
 ### Visuals
 1. Duplicate the `hacks/template` folder and rename it to match the name of your game, **with no spaces**.
     > Note: This will also be part of the pages URL.
-2. Inside your new folder, open `config.js` and edit it with your hack’s `title` and the ROM `base:` used for your patches.
+2. Inside your new folder, open `config.js` and edit it with your hack’s `title:` and the ROM `base:` used for your patches.
 3. Within this same file, the `discord:`, `github:`, `pokécommunity:` and/or `reddit:` fields can be filled with links in order to display buttons for each on your patching page.
 4. Add a high-resolution logo for your hack to your folder, named `logo.png`. This will appear at the top of your hack’s page.
 5. Open `info.md`. When adding more information such as screenshots, features, credits, etc. to this file, it will display the content on your hack page.
