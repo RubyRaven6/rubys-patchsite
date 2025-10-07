@@ -3,9 +3,9 @@
   "patches": [
     {
       "file": "patchfile.bps",
-      "name": "Game (English v1.0)",
-      "description": "English fan translation for Game",
-      "outputName": "Game (English v1.0)"
+      "name": "ROM Hack v1.0",
+      "description": "",
+      "outputName": "ROM Hack"
     }
   ]
 }
