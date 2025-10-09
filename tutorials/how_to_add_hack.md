@@ -54,7 +54,7 @@ Firstly we'll create your very own patching page, allowing information about you
     > If this zip file is too large, errors may occur with the patcher, although the exact file size that causes this is unknown.
     > If either of these occur, try reducing the number of patches hosted.
     
-    The python script `patch_zipper.py` in the root directory of this repo is provided to help generate a properly formatted `.zip` file from your patch folder. It can by run while parsing an argument containing the directory of your patching page directory, eg. `python3 patch_zipper.py hacks/template`.
+    The python script `patch_zip.py` in the `scripts` folder is provided to help generate a properly formatted `.zip` file from your patch folder. It can by run while parsing an argument containing the directory of your patching page directory, eg. `python3 scripts/patch_zip.py hacks/template`.
 
 ---
 
