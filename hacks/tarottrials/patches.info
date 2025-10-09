@@ -4,13 +4,13 @@
     {
       "file": "AioTarotTrials3.bps",
       "name": "Tarot Trials (v3.0)",
-      "description": "Pokémon Emerald (USA, Europe) Base ROM",
+      "description": "",
       "outputName": "TarotTrials"
     },
     {
       "file": "AioTarotTrials4.bps",
       "name": "Tarot Trials (v4.0)",
-      "description": "Pokémon Emerald (USA, Europe) Base ROM",
+      "description": "",
       "outputName": "TarotTrials"
     }
   ]
