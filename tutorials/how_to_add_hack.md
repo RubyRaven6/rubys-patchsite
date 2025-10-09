@@ -53,7 +53,7 @@ Firstly we'll create your very own patching page, allowing information about you
     - `"name":` is the name displayed by the patcher
     - `"description":` is the description displayed by the patcher
     - `"outputName":` is the name of the patched ROM that is downloaded
-4. Create a `patches.zip` file in your patching page directory containing all of the patches. It is recommended this is done by following the below instructions, but it can also be done manually, or by making sure the PR starts with the name `[ZIP PATCHES]`.
+4. Create a `patches.zip` file in your patching page directory containing all of the patches. It is recommended this is done by following the below instructions, but it can also be done manually, ~~or by making sure the PR starts with the name `[ZIP PATCHES]`~~ (*coming soon*).
     > Note:
     > This `patch.zip` file cannot exceed GitHub's 100MB maximum file size.
     > If this zip file is too large, errors may occur with the patcher, although the exact file size that causes this is unknown.
