@@ -2,7 +2,7 @@
 
 Thank you for allowing your ROM hack to be hosted on **Team Aqua Rom Patchers** website!  
 
-To add your patching page, you can **fork the repository, create and make edits in your patcher's own folder, and open a pull request**. Once your PR is reviewed by a maintainer, your patcher may be added to the homepage. **None of the necessary edits require HTML knowledge and are all contained within your patching page folder** — no changes to other parts of the site are required.
+To add your patching page, you can **fork the repository's `patchless` (default) branch, create and make edits in your patcher's own folder, and open a pull request to the master branch**. Once your PR is reviewed by a maintainer, your patcher may be added to the homepage. **None of the necessary edits require HTML knowledge and are all contained within your patching page folder** — no changes to other parts of the site are required.
 
 ---
 
