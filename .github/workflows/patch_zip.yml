@@ -8,8 +8,10 @@ on:
 jobs:
   patch:
     if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' &&
       github.event.pull_request.merged == true &&
-      startsWith(github.event.pull_request.title, '[ZIP PATCHES]')
+      startsWith(github.event.pull_request.title, '[ZIP PATCHES]'))
     runs-on: ubuntu-latest
 
     permissions:
@@ -20,14 +22,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
-          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          ref: ${{ github.event.pull_request.merge_commit_sha || github.sha }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
       
-      - name: Run patch.zip repo wide
+      - name: Update patches repo wide
         run: |
           python3 scripts/patch_zip.py ./
 
@@ -41,15 +43,16 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "[PATCH REZIP] Update Patch Files"
-            git push origin HEAD
+            git push origin master
           else
             echo "No changes to commit."
           fi
 
   none:
     if: >
-      github.event.pull_request.merged != true ||
-      !startsWith(github.event.pull_request.title, '[ZIP PATCHES]')
+      github.event_name == 'pull_request' &&
+      (github.event.pull_request.merged != true ||
+      !startsWith(github.event.pull_request.title, '[ZIP PATCHES]'))
     runs-on: ubuntu-latest
     steps:
       - name: Skip message
