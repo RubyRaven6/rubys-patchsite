@@ -4,7 +4,7 @@
     {
       "file": "legends.bps",
       "name": "Pokémon Legends SB",
-      "description": "Pokémon Emerald (USA, Europe) Base ROM",
+      "description": "",
       "outputName": "pokemon_legends_sb"
     }
   ]
