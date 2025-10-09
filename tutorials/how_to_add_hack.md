@@ -2,7 +2,7 @@
 
 Thank you for allowing your ROM hack to be hosted on **Team Aqua Rom Patchers** website!  
 
-To add your patching page, you can **fork the repository, create and make edits in your patcher's own folder, and open a pull request**. Once your PR is reviewed by a maintainer, your patcher may be added to the homepage. **None of the necessary edits require HTML knowledge and are all contained within your patching page folder** — no changes to other parts of the site are required.
+To add your patching page, you can **fork the repository's `patchless` (default) branch, create and make edits in your patcher's own folder, and open a pull request to the master branch**. Once your PR is reviewed by a maintainer, your patcher may be added to the homepage. **None of the necessary edits require HTML knowledge and are all contained within your patching page folder** — no changes to other parts of the site are required.
 
 ---
 
@@ -26,7 +26,7 @@ Firstly we'll create your very own patching page, allowing information about you
 3. Within this same file, the `discord:`, `github:`, `pokécommunity:` and/or `reddit:` fields can be filled with links in order to display buttons for each on your patching page.
 4. Add a high-resolution logo for your hack to your folder, named `logo.png`. This will appear at the top of your hack’s page.
 5. Open `info.md`. When adding more information such as screenshots, features, credits, etc. to this file, it will display the content on your hack page.
-6. Open `color.css`. Changing the value of `--page-bg-color` will change the background colour of the patching page.
+6. Open `color.css`. Changing the value of `--page-title-color`, will edit the title colour and `--page-bg-color` will change the background colour of the patching page.
 
 ### Patches & Info
 1. Create a subfolder called `patches` within your patching page directory.
@@ -48,13 +48,13 @@ Firstly we'll create your very own patching page, allowing information about you
     - `"name":` is the name displayed by the patcher
     - `"description":` is the description displayed by the patcher
     - `"outputName":` is the name of the patched ROM that is downloaded
-4. Create a `patches.zip` file in your patching page directory containing all of the patches.
+4. Create a `patches.zip` file in your patching page directory containing all of the patches. It is recommended this is done by following the below instructions, but it can also be done manually, or by making sure the PR starts with the name `[ZIP PATCHES]`.
     > Note:
     > This `patch.zip` file cannot exceed GitHub's 100MB maximum file size.
     > If this zip file is too large, errors may occur with the patcher, although the exact file size that causes this is unknown.
     > If either of these occur, try reducing the number of patches hosted.
     
-    The python script `patch_zipper.py` in the root directory of this repo is provided to help generate a properly formatted `.zip` file from your patch folder. It can by run while parsing an argument containing the directory of your patching page directory, eg. `python3 patch_zipper.py hacks/template`.
+    The python script `patch_zip.py` in the `scripts` folder is provided to help generate a properly formatted `.zip` file from your patch folder. It can by run while parsing an argument containing the directory of your patching page directory, eg. `python3 scripts/patch_zip.py hacks/template`.
 
 ---
 
