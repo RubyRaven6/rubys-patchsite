@@ -26,7 +26,7 @@ Firstly we'll create your very own patching page, allowing information about you
 3. Within this same file, the `discord:`, `github:`, `pokécommunity:` and/or `reddit:` fields can be filled with links in order to display buttons for each on your patching page.
 4. Add a high-resolution logo for your hack to your folder, named `logo.png`. This will appear at the top of your hack’s page.
 5. Open `info.md`. When adding more information such as screenshots, features, credits, etc. to this file, it will display the content on your hack page.
-6. Open `color.css`. Changing the value of `--page-bg-color` will change the background colour of the patching page.
+6. Open `color.css`. Changing the value of `--page-title-color`, will edit the title colour and `--page-bg-color` will change the background colour of the patching page.
 
 ### Patches & Info
 1. Create a subfolder called `patches` within your patching page directory.
