@@ -20,8 +20,10 @@ Firstly we'll create your very own patching page, allowing information about you
 +   └── patches.zip
 ```
 ### Visuals
-1. Duplicate the `hacks/template` folder and rename it to match the name of your game, **with no spaces**.
-    > Note: This will also be part of the pages URL.
+1. First, you must create your ROM Patching folder. This can be done two ways:
+    - In the root of your fork, use the python script `python3 scripts/new_hack.py name` where `name` is your hack name **with no spaces**.
+    - Duplicate the `hacks/template` folder and rename it to match the name of your game, **with no spaces**.
+    > Note: Your hack name will also be part of the pages URL.
 2. Inside your new folder, open `config.js` and edit it with your hack’s `title:` and the ROM `base:` used for your patches.
 3. Within this same file, the `discord:`, `github:`, `pokécommunity:` and/or `reddit:` fields can be filled with links in order to display buttons for each on your patching page.
 4. Add a high-resolution logo for your hack to your folder, named `logo.png`. This will appear at the top of your hack’s page.
@@ -29,7 +31,7 @@ Firstly we'll create your very own patching page, allowing information about you
 6. Open `color.css`. Changing the value of `--page-title-color`, will edit the title colour and `--page-bg-color` will change the background colour of the patching page.
 
 ### Patches & Info
-1. Create a subfolder called `patches` within your patching page directory.
+1. If it doesn't already exist, create a subfolder called `patches` within your patching page directory.
 2. Place your patch files inside it.
     > Only `.bps`, `.ups` and `.xdelta` patches are able to be used.
 3. Open the `patches.info` file, which contains details about each patch.
