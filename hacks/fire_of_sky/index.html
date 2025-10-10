@@ -2,11 +2,9 @@
 <html translate="no">
 
 <head>
-	<title>Pokémon Fire of Sky</title> 
+	<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
 	<meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-
-
 
 	<!-- Rom Patcher JS needed CSS/JS files -->
 	<link type="text/css" rel="stylesheet" href="../../rom-patcher-js/style.css" media="all" />
@@ -18,34 +16,34 @@
 		window.addEventListener('load', function (evt) {
 			try {
 				fetch("./patches.info")
-				.then(res => res.json())
-				.then(patchInfo => {
-					RomPatcherWeb.initialize(
-						{
-							language: 'en',
-							requireValidation: true,
-							allowDropFiles: true
-						},
-						patchInfo
-					);
-					
-					const downloadBtn = document.getElementById('rom-patcher-button-download');
-					const patchSelect = document.getElementById('rom-patcher-select-patch');
+					.then(res => res.json())
+					.then(patchInfo => {
+						RomPatcherWeb.initialize(
+							{
+								language: 'en',
+								requireValidation: true,
+								allowDropFiles: true
+							},
+							patchInfo
+						);
 
-					downloadBtn.onclick = () => {
-					const selectedIndex = patchSelect.selectedIndex;
-					if (selectedIndex < 0) return;
+						const downloadBtn = document.getElementById('rom-patcher-button-download');
+						const patchSelect = document.getElementById('rom-patcher-select-patch');
 
-					const patch = patchInfo.patches[selectedIndex];
-					const link = document.createElement('a');
-					link.href = `./patches/${patch.file}`;
-					link.download = patch.file.split('/').pop();
-					document.body.appendChild(link);
-					link.click();
-					document.body.removeChild(link);
-					};
-				})
-				.catch(err => console.error(err));
+						downloadBtn.onclick = () => {
+							const selectedIndex = patchSelect.selectedIndex;
+							if (selectedIndex < 0) return;
+
+							const patch = patchInfo.patches[selectedIndex];
+							const link = document.createElement('a');
+							link.href = `./patches/${patch.file}`;
+							link.download = patch.file.split('/').pop();
+							document.body.appendChild(link);
+							link.click();
+							document.body.removeChild(link);
+						};
+					})
+					.catch(err => console.error(err));
 			} catch (err) {
 				var message = err.message;
 				if (/incompatible browser/i.test(message) || /variable RomPatcherWeb/i.test(message))
@@ -61,35 +59,35 @@
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
-<body style="font: 15px 'Open Sans', sans-serif; background-color: var(--page-bg-color); color: #e4e4e6;">
+<body
+	style="font: 15px 'Open Sans', sans-serif; background-color: var(--page-bg-color); color: var(--page-title-color);">
 	<header style="text-align: center">
-		<img src="./logo.png" alt="Pokémon Transform Logo" width="35%" loading="lazy">
-		<h1>Pokémon Fire of Sky</h1>
+		<img id="logoImage" src="./logo.png" alt="{title} Logo" width="35%">
+		<h1>{title}</h1>
 	</header>
 
-	<div id="rom-patcher-container"
-		style="justify-content:center;align-items:center;text-align:center;">
+	<div id="rom-patcher-container" style="justify-content:center;align-items:center;text-align:center;">
 	</div>
 	<script>
 		fetch('./info.md')
-		.then(response => {
-		if (!response.ok) {
-			return "";
-		}
-		return response.text();
-		})
-		.then(text => {
-		const container = document.getElementById('rom-patcher-container');
-		if (text.trim()) {
-			container.innerHTML = marked.parse(text);
-		} else {
-			container.innerHTML = "";
-		}
-		})
-		.catch(err => {
-		document.getElementById('rom-patcher-container').innerHTML = "";
-		console.error(err);
-		});
+			.then(response => {
+				if (!response.ok) {
+					return "";
+				}
+				return response.text();
+			})
+			.then(text => {
+				const container = document.getElementById('rom-patcher-container');
+				if (text.trim()) {
+					container.innerHTML = marked.parse(text);
+				} else {
+					container.innerHTML = "";
+				}
+			})
+			.catch(err => {
+				document.getElementById('rom-patcher-container').innerHTML = "";
+				console.error(err);
+			});
 	</script>
 
 	<!-- Rom Patcher JS container -->
@@ -100,6 +98,12 @@
 			#rom-patcher-button-apply
 		The rest of elements are informative and can be removed, though it's recommended to keep them for a better user experience.
 	-->
+	<div id="rom-patcher-container" style="justify-content:center;align-items:center;text-align:center;">
+		<span class="text-mono text-muted">
+			Base ROM:<br>
+			{base}
+		</span>
+	</div>
 	<div id="rom-patcher-container">
 		<div class="rom-patcher-row margin-bottom" id="rom-patcher-row-file-rom">
 			<div class="text-right"><label for="rom-patcher-input-file-rom" data-localize="yes">ROM file:</label></div>
@@ -147,14 +151,31 @@
 			<div id="rom-patcher-row-error-message" class="margin-bottom"><span id="rom-patcher-error-message"></span>
 			</div>
 			<button id="rom-patcher-button-apply" data-localize="yes" disabled>Apply patch</button>
-			<button id="rom-patcher-button-download" data-localize="yes">Download patch</button>
+			<button id="rom-patcher-button-download" data-localize="yes" disabled>Download patch</button>
 		</div>
 		<br />
 		<div id="external-hack-link">
-			<!--replace the links with the corresponding links, delete anything you dont need-->
-			<div class="smaller-external-button">
-				<a href="https://github.com/jschoeny/TARC2" target="_blank">
+			<div class="smaller-external-button" id="discordButton">
+				<a href="" target="_blank">
+					<img src="../../assets/images/externals/Discord-Symbol-Blurple.png" loading="lazy" />
+				</a>
+			</div>
+
+			<div class="smaller-external-button" id="githubButton">
+				<a href="" target="_blank">
 					<img src="../../assets/images/externals/github-mark.png" loading="lazy" />
+				</a>
+			</div>
+
+			<div class="smaller-external-button" id="pokecommunityButton">
+				<a href="" target="_blank">
+					<img src="../../assets/images/externals/PokéCommunity_Logo_2014.png" loading="lazy" />
+				</a>
+			</div>
+
+			<div class="smaller-external-button" id="redditButton">
+				<a href="" target="_blank">
+					<img src="../../assets/images/externals/Reddit_Icon_FullColor.png" loading="lazy" />
 				</a>
 			</div>
 		</div>
@@ -162,13 +183,58 @@
 	</div>
 
 	<div id="rom-patcher-powered" class="text-center">
-		<a href="https://github.com/marcrobledo/RomPatcher.js" target="_blank"><img
-				src="../../rom-patcher-js/assets/powered_by_rom_patcher_js.png" loading="lazy" />Powered by Rom Patcher JS</a>
+		<a href="https://github.com/marcrobledo/RomPatcher.js" target="_blank"
+			style="color: var(--page-rom-patcher-link-color, --rom-patcher-link-color);"><img
+				src="../../rom-patcher-js/assets/powered_by_rom_patcher_js.png" loading="lazy" />Powered by Rom Patcher
+			JS</a>
 	</div>
 	<div id="team-aqua-homepage" class="text-center">
-		<a href="../../index.html"><img
-				src="../../assets/images/team-aqua-logo.png" loading="lazy" />Team Aqua RomPatchers Homepage</a>
+		<a href="../../index.html" style="color: var(--page-rom-patcher-link-color, --rom-patcher-link-color);"><img
+				src="../../assets/images/team-aqua-logo.png" loading="lazy" />Team Aqua
+			RomPatchers Homepage</a>
 	</div>
+
+	<!-- Load Other Rom Hack Page Elements -->
+	<script src="./config.js"></script>
+	<script>
+		(() => {
+			const config = window.TARP_CONFIG || {};
+			const title = config.title || "Untitled Rom Hack";
+			const base = config.base || "Not Specified";
+
+			document.body.innerHTML = document.body.innerHTML.replaceAll("{title}", title);
+			document.body.innerHTML = document.body.innerHTML.replaceAll("{base}", base);
+			document.title = title;
+
+			const links = config.externalLinks || {};
+			const map = {
+				discordButton: links.discord,
+				githubButton: links.github,
+				pokecommunityButton: links.pokécommunity,
+				redditButton: links.reddit
+			};
+
+			Object.entries(map).forEach(([id, href]) => {
+				const btn = document.getElementById(id);
+				if (btn) {
+					if (href) {
+						const a = btn.querySelector("a");
+						if (a) a.href = href;
+						btn.style.display = "inline-block";
+					} else {
+						btn.style.display = "none";
+					}
+				}
+			});
+
+			const logoImg = document.getElementById("logoImage");
+			if (logoImg) {
+				logoImg.onerror = () => {
+					logoImg.style.display = "none";
+				};
+			}
+		})();
+	</script>
 </body>
 
 </html>

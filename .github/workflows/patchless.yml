@@ -1,0 +1,26 @@
+name: Sync Patchless Branch
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Production Branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Recreate Patchless Branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B patchless
+          git rm -r --cached hacks/**/patches hacks/**/patches.zip 2>/dev/null || true
+          git commit -m "Remove patch files" || echo "No patch files to remove"
+          git push origin patchless --force
