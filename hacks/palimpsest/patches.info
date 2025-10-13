@@ -2,7 +2,7 @@
   "file": "./patches.zip",
   "patches": [
     {
-      "file": "palimpsest_version_1_1.bps",
+      "file": "palimpsest_version_1_1.ups",
       "name": "Pokémon Palimpsest v1.1",
       "description": "",
       "outputName": "pokemon_palimpsest_v1.1"
