@@ -21,6 +21,7 @@ If you wish to add your own hack, see [this tutorial](./tutorials/how_to_add_hac
 - Pokémon Collapse: Frostborne by duckboy2001
 - Pokémon Legends SB by jicem
 - Pokémon The Unown King by Nicolavs Aqvae
+- Pokémon Palimpsest by KittyPBoxx
 
 ### Team Aqua Romhacking Competition 2024
 - Pokémon SpinSpinSpin by purrfectdoodle
